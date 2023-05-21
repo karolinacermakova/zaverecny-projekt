@@ -1,0 +1,35 @@
+//colors
+$primary: #807C7C;
+$background: #ECECEC;
+$optional: #B0ACAC;
+$special: #463E3C;
+
+//font
+$font-primary: Raleway, sans-serif;
+
+//font-size
+$font-size: 16px;
+$font-size-small: 14px;
+$font-size-large: 20px;
+
+//spacers
+$spacer: 20px;
+$spacer-small: 10px;
+$spacer-large: 40px;
+
+body {
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  box-shadow: 0 0 100px $primary;
+}
+
+.wrapper {
+  color: $primary;
+  background-color: $background;
+  font-family: $font-primary;
+  font-size: $font-size;
+  padding: $spacer;
+}
