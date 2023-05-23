@@ -13,4 +13,35 @@ body {
   font-family: Raleway, sans-serif;
   font-size: 16px;
   padding: 20px;
+}
+
+.menu__link {
+  color: #807C7C;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.menu__link:hover {
+  color: #ECECEC;
+  background-color: #b6b6b6;
+  border: 1px solid #463E3C;
+}
+.menu__list {
+  display: none;
+  list-style: none;
+}
+.menu__item {
+  padding: 20px;
+}
+.menu__checkbox {
+  position: absolute;
+  left: -9999px;
+}
+.menu__checkbox:checked ~ .menu__list {
+  display: block;
+}
+.menu__toggler {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

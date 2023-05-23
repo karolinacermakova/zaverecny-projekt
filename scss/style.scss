@@ -1,6 +1,7 @@
 //colors
 $primary: #807C7C;
 $background: #ECECEC;
+$background-darker: #b6b6b6;
 $optional: #B0ACAC;
 $special: #463E3C;
 
@@ -32,4 +33,46 @@ body {
   font-family: $font-primary;
   font-size: $font-size;
   padding: $spacer;
+}
+
+//menu
+.menu {
+
+  &__link {
+    color: $primary;
+    text-decoration: none;
+    font-size: $font-size-small;
+    padding: $spacer-small;
+    margin: $spacer-small;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $background;
+      background-color: $background-darker;
+      border: 1px solid $special;
+    }
+  }
+
+  &__list {
+    display: none;
+    list-style: none;
+  }
+
+  &__item {
+    padding: $spacer;
+  }
+
+  &__checkbox {
+    position: absolute;
+    left: -9999px;
+
+    &:checked ~ .menu__list {
+      display: block;
+    }
+  }
+
+  &__toggler {
+    cursor: pointer;
+  }
+
 }
