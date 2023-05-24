@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {{ title }} </title>
+
+    <!-- Google Fonts: Raleway Light 300, Bold 700-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            
+            <div class="header__hero-section">
+                <h1>PHOTOS BY KORALINA</h1>
+                <div class="header__image"></div>
+            </div>
+
+            <nav class="menu">
+
+                <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+		        <label for="menu-checkbox" class="menu__toggler">☰ MENU</label>
+
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__link">HOME</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">GALERIE</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">O MNĚ</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">KONTAKT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+
+            {{ content | safe }}
+
+        </main>
+
+        <!--Footer-->
+
+        <footer>
+
+            <div class="footer">
+
+
+                    <div class="footer__copyright">
+                        <p>© 2023 PHOTOS BY KORALINA</p>
+                    </div>
+
+                    <div class="footer__socials">
+                    <div class="footer__facebook">
+                        <a href="https://www.facebook.com/koralinaswonderland"><img src="images/facebook.png" alt="facebook"></a>
+                    </div>
+
+                    <div class="footer__instagram">
+                        <a href="https://www.instagram.com/photosbykoralina/"><img src="images/instagram.png" alt="instagram"></a>
+                    </div>
+                    </div>
+
+                    <nav class="footer__menu">
+
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">HOME</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">GALLERIE</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">O MNĚ</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">KONTAKT</a></li>
+                        </ul>
+
+                    </nav>
+
+            </div>
+
+           
+
+            
+        </footer>
+        
+
+    </div> <!-- end of wrapper -->
+</body>
+</html>
