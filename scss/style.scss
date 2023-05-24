@@ -441,6 +441,9 @@ h3 {
 // BIO
 
 .bio {
+
+  margin: $spacer-extra-large;
+  padding: $spacer-extra-large;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -450,6 +453,23 @@ h3 {
   &__image-item {
     width: 400px;
     border-radius: 50%;
+  }
+
+  &__description {
+    max-width: 600px;
+  }
+
+  //BIO PC
+  @media screen and (min-width: 1100px) {
+
+    flex-direction: row;
+    gap: $spacer-large;
+    justify-content: center;
+
+    &__image-item {
+    border-radius: 0%;
+    }
+
   }
 
 }
