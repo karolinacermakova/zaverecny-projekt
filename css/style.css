@@ -265,6 +265,23 @@ h3 {
   justify-content: center;
   margin: 40px;
 }
+.contact__button {
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 80px;
+  margin: 40px;
+  border: 1px solid #463E3C;
+  border-radius: 5px;
+  background-color: #463E3C;
+  color: #ECECEC;
+  transition: all 0.3s ease-in-out;
+}
+.contact__button:hover {
+  background-color: #ECECEC;
+  color: #807C7C;
+}
 .contact__label {
   margin-bottom: 5px;
   margin-top: 10px;

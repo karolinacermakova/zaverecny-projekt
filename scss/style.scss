@@ -347,9 +347,24 @@ h3 {
     margin: $spacer-large;
   }
 
-  // &__form {
-  //   text-align: left;
-  // }
+  &__button {
+    font-family: $font-primary;
+    text-align: center;
+    text-decoration: none;
+    font-size: $font-size;
+    padding: $spacer-small $spacer-extra-large;
+    margin: $spacer-large;
+    border: 1px solid $special;
+    border-radius: 5px;
+    background-color: $special;
+    color: $background;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $background;
+      color: $primary;
+    } 
+  }
 
   &__label {
     margin-bottom: $spacer-small / 2;
