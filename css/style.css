@@ -307,4 +307,16 @@ h3 {
     grid-row: span 3;
     grid-column: span 2;
   }
+}
+
+.contact {
+  text-align: center;
+}
+.contact__form {
+  text-align: left;
+}
+.contact__label {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  display: block;
 }/*# sourceMappingURL=style.css.map */

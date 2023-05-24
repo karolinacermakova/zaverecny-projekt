@@ -397,4 +397,18 @@ h3 {
 }
 }
 
+//kontakt
 
+.contact {
+  text-align: center;
+
+  &__form {
+    text-align: left;
+  }
+
+  &__label {
+    margin-bottom: $spacer-small / 2;
+    margin-top: $spacer-small;
+    display: block;
+  }
+}
