@@ -442,6 +442,7 @@ h3 {
   font-size: $font-size-small;
   color: $special;
 
+
   &__link {
     color: $special;
     text-decoration: none;
@@ -464,6 +465,7 @@ h3 {
   }
 
   &__list {
+    padding-left: 0;
     display: flex;
     gap: $spacer;
   }

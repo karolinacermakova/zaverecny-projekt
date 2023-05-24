@@ -357,6 +357,7 @@ h3 {
   color: #b6b6b6;
 }
 .footer__list {
+  padding-left: 0;
   display: flex;
   gap: 20px;
 }
