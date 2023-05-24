@@ -5,7 +5,7 @@ html { box-sizing: border-box; }
 $primary: #807C7C;
 $background: #ECECEC;
 $background-darker: #b6b6b6;
-$optional: #B0ACAC;
+$optional: #c1c1c1;
 $special: #463E3C;
 
 //font
@@ -15,6 +15,8 @@ $font-primary: Raleway, sans-serif;
 $font-size: 16px;
 $font-size-small: 10px;
 $font-size-large: 20px;
+$font-size-header-tablet: 40px;
+$font-size-extralarge: 80px;
 
 //spacers
 $spacer: 20px;
@@ -45,6 +47,57 @@ h3 {
   font-size: $font-size;
   padding: $spacer;
 }
+
+//header
+.header {
+
+  display: none;
+
+//header tablet
+
+@media screen and (min-width: 768px) {
+
+  display: block;
+
+  &__image {
+    text-align: center;
+    height: 800px;
+    background: no-repeat center/cover;
+    font-size: $font-size-header-tablet;
+  }
+
+  &__title {
+    color: $background;
+    text-shadow: 0px 0px $spacer-extra-large $background;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  }
+
+//header PC
+
+@media screen and (min-width: 1100px) {
+
+  &__image {
+    text-align: center;
+    height: 800px;
+    background: no-repeat center/cover;
+    font-size: $font-size-extralarge;
+  }
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  }
+}
+
 
 //menu
 .menu {

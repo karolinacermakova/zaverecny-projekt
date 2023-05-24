@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
 <body>
@@ -21,8 +21,9 @@
         <header class="header">
             
             <div class="header__hero-section">
-                <h1>PHOTOS BY KORALINA</h1>
-                <div class="header__image"></div>
+                <div class="header__image" style="background-image: url('/images/{{ banner }}')"> 
+                    <div class="header__title"> {{ header }} </div> 
+            </div>
             </div>
 
             <nav class="menu">
@@ -57,11 +58,11 @@
 
                     <div class="footer__socials">
                     <div class="footer__facebook">
-                        <a href="https://www.facebook.com/koralinaswonderland"><img src="images/facebook.png" alt="facebook"></a>
+                        <a href="https://www.facebook.com/koralinaswonderland"><img src="/images/facebook.png" alt="facebook"></a>
                     </div>
 
                     <div class="footer__instagram">
-                        <a href="https://www.instagram.com/photosbykoralina/"><img src="images/instagram.png" alt="instagram"></a>
+                        <a href="https://www.instagram.com/photosbykoralina/"><img src="/images/instagram.png" alt="instagram"></a>
                     </div>
                     </div>
 
