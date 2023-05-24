@@ -270,7 +270,7 @@ h3 {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  padding: 10px 80px;
+  padding: 10px;
   margin: 40px;
   border: 1px solid #463E3C;
   border-radius: 5px;
@@ -297,6 +297,11 @@ h3 {
   outline: none;
   border: 1px solid #463E3C;
   box-shadow: 0 0 5px #463E3C;
+}
+@media screen and (min-width: 1100px) {
+  .contact__button {
+    padding: 10px 80px;
+  }
 }
 
 .bio {
