@@ -28,6 +28,7 @@ $spacer-extra-large: 80px;
 body {
   margin: 0;
   line-height: 1.5;
+  background-color: $background;
 }
 
 h3 {
@@ -40,7 +41,6 @@ h3 {
 .wrapper {
   margin: 0 auto;
   color: $primary;
-  background-color: $background;
   font-family: $font-primary;
   font-size: $font-size;
   padding: $spacer;
