@@ -293,8 +293,8 @@ h3 {
   &__button {
     text-align: center;
     text-decoration: none;
-    font-size: $font-size;
-    padding: $spacer-small $spacer-extra-large;
+    font-size: $font-size-small;
+    padding: $spacer-small;
     margin: $spacer-large;
     border: 1px solid $special;
     border-radius: 5px;
@@ -310,6 +310,11 @@ h3 {
   
   // galleries tablet
   @media screen and (min-width: 768px) {
+
+  &__button {
+    padding: $spacer-small $spacer-extra-large;
+    font-size: $font-size-medium;
+  }
 
   &__grid{
     margin: $spacer-large auto;

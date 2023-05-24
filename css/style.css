@@ -220,8 +220,8 @@ h3 {
 .gallery__button {
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
-  padding: 10px 80px;
+  font-size: 10px;
+  padding: 10px;
   margin: 40px;
   border: 1px solid #463E3C;
   border-radius: 5px;
@@ -234,6 +234,10 @@ h3 {
   color: #807C7C;
 }
 @media screen and (min-width: 768px) {
+  .gallery__button {
+    padding: 10px 80px;
+    font-size: 14px;
+  }
   .gallery__grid {
     margin: 40px auto;
     padding: 10px;
