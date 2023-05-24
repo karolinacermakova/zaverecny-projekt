@@ -312,11 +312,10 @@ h3 {
 .footer {
   display: flex;
   flex-direction: column;
+  justify-items: center;
   align-items: center;
   gap: 40px;
-  font-size: 14px;
-  margin: 40px;
-  padding: 40px;
+  font-size: 10px;
   color: #463E3C;
 }
 .footer__link {
@@ -337,7 +336,7 @@ h3 {
 }
 .footer__list {
   display: flex;
-  gap: 80px;
+  gap: 20px;
 }
 .footer__item {
   list-style: none;
@@ -352,6 +351,7 @@ h3 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 14px;
   }
   .footer__list {
     display: flex;
