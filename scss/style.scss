@@ -50,14 +50,17 @@ h3 {
 
 //header
 .header {
-
+  &__hero-section{
   display: none;
+  }
 
 //header tablet
 
 @media screen and (min-width: 768px) {
 
-  display: block;
+  &__hero-section{
+    display: block;
+    }
 
   &__image {
     text-align: center;
@@ -267,7 +270,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   gap: $spacer-large;
-  font-size: $font-size;
+  font-size: $font-size-small;
   margin: $spacer-large;
   padding: $spacer-large;
   color: $special;
@@ -400,15 +403,53 @@ h3 {
 //kontakt
 
 .contact {
+  padding: $spacer;
+  margin: $spacer-large;
   text-align: center;
 
-  &__form {
-    text-align: left;
+  &__socials {
+    display: flex;
+    gap: $spacer;
+    justify-content: center;
+    margin: $spacer-large;
   }
+
+  // &__form {
+  //   text-align: left;
+  // }
 
   &__label {
     margin-bottom: $spacer-small / 2;
     margin-top: $spacer-small;
     display: block;
   }
+
+  &__input {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid $primary;
+    border-radius: $font-size-small / 2;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $special;
+      box-shadow: 0 0 5px $special;
+    }
+  }
+}
+
+// BIO
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: $spacer;
+  text-align: justify;
+
+  &__image-item {
+    width: 400px;
+    border-radius: 50%;
+  }
+
 }
