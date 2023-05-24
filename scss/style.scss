@@ -238,6 +238,11 @@ h3 {
     &__text {
       margin-top: $spacer;
     }
+
+    &__button {
+      padding: $spacer-small $spacer-extra-large;
+      font-size: $font-size-medium;
+    }
   }
   //offer PC
   @media screen and (min-width: 1100px) {
@@ -256,11 +261,6 @@ h3 {
 
     &__text {
       margin-top: $spacer;
-    }
-
-    &__button {
-      padding: $spacer-small $spacer-extra-large;
-      font-size: $font-size-medium;
     }
   }
   
