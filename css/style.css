@@ -19,6 +19,7 @@ h3 {
 }
 
 .wrapper {
+  margin: 0;
   color: #807C7C;
   background-color: #ECECEC;
   font-family: Raleway, sans-serif;
