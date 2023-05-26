@@ -353,6 +353,14 @@ h3 {
   }
 }
 
+.sucess-form {
+  text-align: center;
+  margin: 40px;
+  padding: 40px;
+  font-size: 20px;
+  color: #463E3C;
+}
+
 .footer {
   margin-top: 80px;
   display: flex;
