@@ -7,6 +7,7 @@ $background: #ECECEC;
 $background-darker: #b6b6b6;
 $optional: #c1c1c1;
 $special: #463E3C;
+$special-lighter: #463e3c0f;
 
 //font
 $font-primary: Raleway, sans-serif;
@@ -112,10 +113,10 @@ h3 {
     padding: $spacer-small;
     margin: $spacer-small;
     transition: all 0.3s ease-in-out;
+    border-radius: 2px;
 
     &:hover {
-      color: $background;
-      background-color: $background-darker;
+      background-color: $special-lighter;
       border: 1px solid $special;
     }
   }
@@ -176,8 +177,7 @@ h3 {
 
   &__image {
     width: 200px;
-    border-radius: 50%;
-    margin-right: 30px;
+    margin-right: $spacer;
   }
 
   //intro PC
@@ -334,7 +334,7 @@ h3 {
     cursor: pointer;
 
     &:hover {
-      transform: scale(1.5);
+      transform: scale(1.3);
     }
   }
 
@@ -398,12 +398,29 @@ h3 {
     }
   }
 
+  &__textarea {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid $primary;
+    border-radius: $font-size-small / 2;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $special;
+      box-shadow: 0 0 5px $special;
+    }
+  }
+
   //kontakt PC
   @media screen and (min-width: 1100px) {
 
     &__button {
       padding: $spacer-small $spacer-extra-large;
       } 
+    }
+
+    &__input {
+      height: $spacer-large;
     }
 }
 
@@ -415,7 +432,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   margin: $spacer;
-  text-align: justify;
+  text-align: center;
 
   &__image-item {
     width: 400px;
@@ -428,7 +445,7 @@ h3 {
 
   //BIO PC
   @media screen and (min-width: 1100px) {
-
+    text-align: left;
     margin: $spacer-extra-large;
     padding: $spacer-extra-large;
     flex-direction: row;
